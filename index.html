@@ -10,8 +10,23 @@
     <script src="/script.js" defer></script>
   </head>
   <body>
-    <label>URL/URI：<input type="text" size="40" value="link" id="link"></label>
+    <a id="sample" href="https://google.com">jump</a>
     <input type="button" value="Check" id="checkButton">
-    <br><a id="url">jump</a>
+    <label>名前：<input type="text" id="nameText"></label>
+    <button id="checkButton;" onclick="changeHref()">acsses</button>
+
+    <script>
+      let checkButton = document.getElementById('checkButton');
+      checkButton.addEventListener('click', butotnClick);
+      
+      function butotnClick(){
+      url = nameText.value;
+      }
+      
+      const target = document.getElementById("sample")
+      const changeHref = () => {
+      target.href = url
+ }
+    </script>
   </body>
 </html>
