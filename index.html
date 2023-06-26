@@ -18,6 +18,7 @@
     <button onclick="changeHref()">acsses</button>
     <input type="button" value="Check" id="checkButton">
     <br><a id="sample" href="https://google.com">jump</a>
+    <br><iframe src="" id="ifr" width="300" height="300"></iframe>
     <div class="how">
       <h2>使い方</h2>
       <span>1.type link</span><br>
@@ -38,6 +39,7 @@
       const target = document.getElementById("sample")
       const changeHref = () => {
       target.href = url
+      document.getElementById("ifr").src=url;
  }
     </script>
   </body>
