@@ -11,11 +11,22 @@
     <script src="/script.js" defer></script>
   </head>
   <body>
+    <header>
+      <h1>page director</h1><br>
+    </header>
     <label>URL/URI<input type="text" id="nameText"></label>
     <button onclick="changeHref()">acsses</button>
     <input type="button" value="Check" id="checkButton">
     <br><a id="sample" href="https://google.com">jump</a>
-
+    <div class="how">
+      <h2>使い方</h2>
+      <span>1.type link</span>
+      <span>2.tap check and acsses</span>
+      <span>3.tap jump</span>
+    </div>
+    <bottom>
+      2023 - now
+    </bottom>
     <script>
       let checkButton = document.getElementById('checkButton');
       checkButton.addEventListener('click', butotnClick);
