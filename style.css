@@ -17,3 +17,7 @@ header{
   padding-top:2px;
   color:white;
 }
+
+@media (prefers-reduced-motion) {
+  .animation {
+    animation-name: dissolve;
