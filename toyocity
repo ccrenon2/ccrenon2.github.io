@@ -11,7 +11,7 @@
     <script src="./script_toyo.js" defer></script>
   
   </head>
-  <!--<body>
+  <body>
     <header>
       <!--<img src="https://cdn.glitch.global/2a397c34-d7ae-4acb-8739-df9acd159ef0/5F33EE68-064F-4DB1-A361-8020ACCA517B.png?v=1687576826458" />-->
       <a href="#about">about</a>
@@ -37,5 +37,5 @@
     <div class="bottom">
         ©︎2023~now kunnao
     </div>
-  </body>-->
+  </body>
 </html>
