@@ -1,3 +1,4 @@
-document.getElementById("button").onclick = function() {
+/*document.getElementById("button").onclick = function() {
   scrollTo(100, 200);
 };
+*/
