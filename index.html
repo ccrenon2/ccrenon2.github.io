@@ -37,11 +37,13 @@
       function butotnClick(){
       url = nameText.value;
       const check = url.includes('https://');
+      if(url == ''){
+        alert("url is required.")
+      }
         if(check == false){
           alert("need'https://'at first");
         }
       }
-      
       const target = document.getElementById("sample")
       const changeHref = () => {
       target.href = url
