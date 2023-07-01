@@ -18,6 +18,20 @@ header{
   color:white;
 }
 
+bottom{
+  padding-top:0px;
+  padding-right:0px;
+  padding-left:0px;
+  padding-bottom:0px;
+  margin-top:100%;
+  margin-right:0px;
+  margin-left:0px;
+  margin-bottom:0px;
+  background-color:glay;
+  width:auto;
+  height:50px;
+}
+
 @media (prefers-reduced-motion) {
   .animation {
     animation-name: dissolve;
