@@ -5,7 +5,7 @@ body{
   margin:none;
 }
 
-.main{
+.content{
   display:flex;
 }
 
@@ -15,6 +15,6 @@ header{
   height:auto;
 }
 
-.content{
+.main{
   flex:6;
 }
