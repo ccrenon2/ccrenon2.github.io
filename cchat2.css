@@ -11,7 +11,7 @@ body{
 
 header{
   box-shadow: 2px 0px 1px black;
-  flex:1
+  flex:1;
   height:auto;
 }
 
