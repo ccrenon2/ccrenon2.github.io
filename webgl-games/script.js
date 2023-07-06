@@ -1,55 +1,21 @@
 //
-// シェーダープログラムを初期化し、WebGL にデータの描画方法を教える
+// ここから開始
 //
-function initShaderProgram(gl, vsSource, fsSource) {
-  const vertexShader = loadShader(gl, gl.VERTEX_SHADER, vsSource);
-  const fragmentShader = loadShader(gl, gl.FRAGMENT_SHADER, fsSource);
+function main() {
+  const canvas = document.querySelector("#glCanvas");
+  // GL コンテキストを初期化する
+  const gl = canvas.getContext("webgl");
 
-  // シェーダープログラムの作成
-
-  const shaderProgram = gl.createProgram();
-  gl.attachShader(shaderProgram, vertexShader);
-  gl.attachShader(shaderProgram, fragmentShader);
-  gl.linkProgram(shaderProgram);
-
-  // シェーダープログラムの作成に失敗した場合、アラートを出す
-
-  if (!gl.getProgramParameter(shaderProgram, gl.LINK_STATUS)) {
-    alert(
-      `シェーダープログラムを初期化できません: ${gl.getProgramInfoLog(
-        shaderProgram
-      )}`
-    );
-    return null;
+  // WebGL が使用可能で動作している場合にのみ続行します
+  if (gl === null) {
+    alert("WebGL を初期化できません。ブラウザーまたはマシンが対応していない可能性があります。");
+    return;
   }
 
-  return shaderProgram;
+  // クリアカラーを黒に設定し、完全に不透明にします
+  gl.clearColor(0.0, 0.0, 0.0, 1.0);
+  // 指定されたクリアカラーでカラーバッファーをクリアします
+  gl.clear(gl.COLOR_BUFFER_BIT);
 }
 
-//
-// 指定された種類のシェーダーを作成し、ソースをアップロード、
-// そしてコンパイル。
-//
-function loadShader(gl, type, source) {
-  const shader = gl.createShader(type);
-
-  // シェーダーオブジェクトにソースを送信
-
-  gl.shaderSource(shader, source);
-
-  // シェーダープログラムをコンパイル
-
-  gl.compileShader(shader);
-
-  // コンパイルが成功したか確認する
-
-  if (!gl.getShaderParameter(shader, gl.COMPILE_STATUS)) {
-    alert(
-      `シェーダーのコンパイル時にエラーが発生しました: ${gl.getShaderInfoLog(shader)}`
-    );
-    gl.deleteShader(shader);
-    return null;
-  }
-
-  return shader;
-}
+window.onload = main;
