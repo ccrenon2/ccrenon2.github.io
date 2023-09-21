@@ -1,3 +1,3 @@
 # ccrenon2.github.io
 web
-https://ccrenon2.glitch.io
+https://ccrenon2.github.io
