@@ -12,6 +12,26 @@
 </head>
 
 <body style="margin : 0px; overflow: hidden;">
+    
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.js"></script>
+  <script>
+    //ロードされた際の処理として実施：
+    window.onload = function(){
+
+      //ボタンを押下した際にダウンロードする画像を作る
+      html2canvas(document.body,{
+        onrendered: function(canvas){
+          //aタグのhrefにキャプチャ画像のURLを設定
+          var imgData = canvas.toDataURL();
+          document.getElementById("ss").href = imgData;
+        }
+      });
+
+    }
+  </script>
+
+  <a href="" id="ss" download="html_ss.png">画像をダウンロード</a>
+    
     <a-scene embedded arjs="debugUIEnabled:false;">
         <a-entity camera></a-entity>
 
