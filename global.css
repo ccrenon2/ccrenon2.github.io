@@ -1,0 +1,67 @@
+body {
+  margin: 0;
+  line-height: normal;
+}
+
+:root {
+  /* fonts */
+  --body-base: Inter;
+  --font-jost: Jost;
+  --font-libre-barcode-128: "Libre Barcode 128";
+  --font-lexend-deca: "Lexend Deca";
+
+  /* font sizes */
+  --body-base-size: 16px;
+  --font-size-xl: 20px;
+  --font-size-13xl: 32px;
+  --font-size-5xl: 24px;
+  --font-size-mini: 15px;
+  --body-small-size: 14px;
+
+  /* Colors */
+  --color-black: #000;
+  --background-default-default: #fff;
+  --border-default-default: #d9d9d9;
+  --text-default-secondary: #757575;
+  --text-default-default: #1e1e1e;
+  --color-gray-100: #1b1b1b;
+  --color-gray-200: #151515;
+  --background-utilities-scrim: rgba(255, 255, 255, 0.8);
+  --color-darkslategray-100: #484848;
+  --text-neutral-default: #303030;
+  --color-orange: #ff9900;
+  --color-darkturquoise: #00cbcb;
+  --color-dimgray-100: #525252;
+  --color-paleturquoise: #b4ffff;
+  --text-default-tertiary: #b3b3b3;
+
+  /* Spacing */
+  --space-400: 16px;
+  --space-800: 32px;
+  --space-300: 12px;
+  --space-600: 24px;
+  --radius-full: 9999px;
+  --icon-large: 40px;
+  --radius-200: 8px;
+  --space-200: 8px;
+
+  /* Gaps */
+  --gap-base: 16px;
+  --gap-xs: 12px;
+  --gap-5xs: 8px;
+
+  /* Paddings */
+  --padding-13xl: 32px;
+  --padding-base: 16px;
+  --padding-17xl: 36px;
+  --padding-smi: 13px;
+  --padding-5xs: 8px;
+  --padding-6xs: 7px;
+  --padding-9xs: 4px;
+  --padding-8xs: 5px;
+  --padding-11xs: 2px;
+  --padding-xl: 20px;
+
+  /* Border radiuses */
+  --br-11xs: 2px;
+}
