@@ -1283,7 +1283,16 @@
   gap: 22px;
   line-height: normal;
   letter-spacing: normal;
+
   font-size: var(--font-size-xl);
   color: var(--color-dimgray-100);
 }
+
+  .x-logo-icon{
+    color:black;
+  }
+
+  .logo-instagram-icon{
+    color:black;
+  }
 }
